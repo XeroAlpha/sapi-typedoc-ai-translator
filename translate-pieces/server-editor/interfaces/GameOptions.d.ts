@@ -1,0 +1,41 @@
+/* IMPORT */ import { DaylightCycle, GamePublishSetting, PlayerPermissionLevel, ProjectExportType, minecraftserver } from '../index';
+
+export interface GameOptions {
+    bonusChest?: boolean; // 是否启用奖励宝箱
+    cheats?: boolean; // 是否允许作弊
+    commandBlockEnabled?: boolean; // 是否启用命令方块
+    daylightCycle?: DaylightCycle; // 昼夜循环设置
+    difficulty?: minecraftserver.Difficulty; // 游戏难度
+    dimensionId?: string; // 维度ID
+    disableWeather?: boolean; // 是否禁用天气
+    educationEdition?: boolean; // 是否为教育版
+    entitiesDropLoot?: boolean; // 实体是否掉落战利品
+    exportType?: ProjectExportType; // 导出类型
+    fireSpreads?: boolean; // 火焰是否蔓延
+    friendlyFire?: boolean; // 是否允许友军伤害
+    gameMode?: minecraftserver.GameMode; // 游戏模式
+    immediateRespawn?: boolean; // 是否立即重生
+    keepInventory?: boolean; // 死亡后是否保留物品栏
+    lanVisibility?: boolean; // 局域网可见性
+    mobGriefing?: boolean; // 是否允许怪物破坏环境
+    mobLoot?: boolean; // 怪物是否掉落战利品
+    mobSpawning?: boolean; // 是否允许怪物生成
+    multiplayerGame?: boolean; // 是否为多人游戏
+    naturalRegeneration?: boolean; // 是否允许自然回复生命值
+    playerAccess?: GamePublishSetting; // 玩家访问权限
+    playerPermissions?: PlayerPermissionLevel; // 玩家权限等级
+    randomTickSpeed?: number; // 随机刻速度
+    recipeUnlocking?: boolean; // 是否允许解锁配方
+    respawnBlocksExplode?: boolean; // 重生点方块是否爆炸
+    respawnRadius?: number; // 重生半径
+    showCoordinates?: boolean; // 是否显示坐标
+    showDaysPlayed?: boolean; // 是否显示已玩天数
+    simulationDistance?: number; // 模拟距离
+    spawnPosition?: minecraftserver.Vector3; // 初始出生点位置
+    startingMap?: boolean; // 是否提供初始地图
+    tileDrops?: boolean; // 方块是否掉落物品
+    timeOfDay?: number; // 当前时间（以一天的时间比例）
+    tntExplodes?: boolean; // TNT是否爆炸
+    weather?: number; // 天气类型
+    worldName?: string; // 世界名称
+}
