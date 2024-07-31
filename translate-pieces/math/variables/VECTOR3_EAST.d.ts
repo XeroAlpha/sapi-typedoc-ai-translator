@@ -8,6 +8,6 @@
  * 
  * @public
  * 
- * 代表世界东方方向（-1,0,0）的单位向量（同 RIGHT）
+ * 代表世界东方方向（-1,0,0）的单位向量（同右方）
  */
 export declare const VECTOR3_EAST: Vector3;

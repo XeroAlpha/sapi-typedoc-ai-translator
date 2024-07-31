@@ -5,7 +5,7 @@
  * 
  * A unit vector representing the world DOWN direction (0,-1,0)
  * 
- * 表示世界 DOWN 方向（0, -1, 0）的单位向量。
+ * 表示世界下方方向（0, -1, 0）的单位向量。
  * 
  * @public
  */
