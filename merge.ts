@@ -39,7 +39,7 @@ function listFileRecursive(dir: string): string[] {
 
 function main(pathPatterns: string[]) {
     const mainTracking = listTrackingFiles('main');
-    const originalTracking = listTrackingFiles('original');
+    const originalTracking = listTrackingFiles('origin/original');
     const untranslatedFiles = Object.keys(mainTracking)
         .filter((k) => mainTracking[k] === originalTracking[k]);
     const thisRootPieces = joinPath(thisRoot, sapiPieces);
