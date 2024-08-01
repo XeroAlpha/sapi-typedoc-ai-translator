@@ -10,9 +10,9 @@
  *
  * @public
  * 
- * 用于 \@minecraft/server 中需要向量的 API 的 Vector3 包装类，同时也包含额外的帮助方法。
+ * 用于 \@minecraft/server 中需要用到三维向量的 API 的 Vector3 包装类，同时也包含额外的帮助方法。
  * 这是对直接使用核心 Vector 3 实用方法的一种替代，适用于偏好面向对象方法的人。
- * 此类的这个版本是可变的，并且内联更改状态。
+ * 此类的该版本是可变的，并且在内联中会更改状态。
  * 
  * 若要使用构建的不可变版本，请使用 ImmutableVector3Builder。
  */
@@ -64,7 +64,7 @@ export declare class Vector3Builder implements Vector3 {
      * 
      * scale
      *
-     * 使用传入的值缩放此向量，返回自身。
+     * 使用传入的值数乘此向量，返回自身。
      */
     scale(val: number): this;
     /**
@@ -124,7 +124,7 @@ export declare class Vector3Builder implements Vector3 {
      * 
      * floor
      *
-     * 对向量的各个分量取整，生成新的向量。
+     * 对向量的各个分量向下取整，生成新的向量。
      */
     floor(): this;
     /**
@@ -147,7 +147,7 @@ export declare class Vector3Builder implements Vector3 {
      * 
      * clamp
      *
-     * 将向量的各个分量限制在一定范围内，生成新的向量。
+     * 将向量的各个分量钳制在一定范围内，生成新的向量。
      */
     clamp(limits: {
         min?: Partial<Vector3>;

@@ -29,7 +29,7 @@ export declare class Vector3Utils {
      *
      * Subtract two vectors to produce a new vector (v1-v2)
      * 
-     * 将两个向量相减生成一个新的向量（v1-v2）
+     * 将两个向量相减生成一个新的向量 (v1-v2)
      */
     static subtract(v1: Vector3, v2: Vector3): Vector3;
     /** scale
@@ -84,7 +84,7 @@ export declare class Vector3Utils {
      *
      * Floor the components of a vector to produce a new vector
      * 
-     * 对向量的各个分量取整，生成一个新的向量
+     * 对向量的各个分量向下取整，生成一个新的向量
      */
     static floor(v: Vector3): Vector3;
     /**
@@ -103,7 +103,7 @@ export declare class Vector3Utils {
      *
      * Clamps the components of a vector to limits to produce a new vector
      * 
-     * 将向量的各个分量限制在一定范围内，生成一个新的向量
+     * 将向量的各个分量钳制在一定范围内，生成一个新的向量
      */
     static clamp(v: Vector3, limits?: {
         min?: Partial<Vector3>;
